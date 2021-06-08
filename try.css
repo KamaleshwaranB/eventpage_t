@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+html,body {
+    background: #00CED1;
+	background-attachment: fixed;	
+	background-size: cover;
+  
+	}
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(247, 246, 246, 0.973);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 3em ;
+	height: 350px;
+	width: 650px;
+    padding: auto;
+  
+	
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 25px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 10%;
+	left: 2%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.2rem;
+	transition: 0.3s linear;
+	background:  #00ced1;
+	border-radius: 5px;
+    position: bottom;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+    padding: 2px;
+	
+}
+
+.btn:hover{transform: translateY(-6px);
+	background: rgb(136, 202, 60);}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+    padding: 5px 10px;
+	font-size: 1em;
+	margin:0;
+	
+}
+
+
+
+
+.btn .buy {z-index: 2; font: weight 10px;;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(0%);}
+
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 60%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+@media (max-width: 1000px) { 
+    .mad{
+        padding-left: 10px ;
+    }
+    #container{
+        box-shadow: 0 15px 30px 1px grey;
+        background: rgba(247, 246, 246, 0.973);
+        text-align:center;
+        border-radius: 0.5px;
+        overflow: hidden;
+        margin-inline: 0.3em ;
+        height: 300px;
+        width: 355px;
+        padding: auto;}
+        .product-image {
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            position:initial;
+            overflow:auto;
+            height: 60%;
+            float:right;
+            width: 60%;
+            display: block;
+        }
+        .product-details {
+            position: relative;
+            text-align:end;
+            overflow: hidden;
+            padding: 30px;
+            height: 100%;
+            float: left;
+            width: 40%;}
+            #container .product-details h1{
+                font-family: 'Bebas Neue', cursive;
+                display: inline-block;
+                position: relative;
+                font-size: 25px;
+                color: #344055;
+                margin: 0;
+                
+            }
+            #container .product-details h1:before{
+                position: absolute;
+                content:normal;
+                right: 0%; 
+                top: 0%;
+                transform: translate(25px, -15px);
+                font-family: 'Bree Serif', serif;
+                display: inline-block;
+                background: #ffe6e6;
+                border-radius: 5px;
+                font-size: 14px;
+                padding: 5px;
+                color: white;
+                margin: 0;
+                animation: chan-sh 6s ease infinite;
+            
+            }
+            .control{
+                position:absolute;
+                bottom: 3%;
+                left: 25%;
+                
+            }
+            .btn {
+
+                transform: translateY(0px);
+                transition: 0.3s linear;
+                background:  #00ced1;
+                border-radius: 0px;
+                position: bottom;
+                overflow: hidden;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                padding:inherit;
+                margin-top: 0px;
+                
+            }
+            .btn .buy { font: weight 5px;}
+            .btn span {
+                font-family: 'Farsan', cursive;
+                transition: transform 0.3s;
+                display:inline;
+                padding: 0px 1px;
+                font-size: 10px;
+                font-family: 'Bree Serif', serif;
+                margin:0;
+                
+            }
+            
+
+      
+    
+ }
+    
+
+
+.info h2 {text-align: center ;color: blanchedalmond;}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
